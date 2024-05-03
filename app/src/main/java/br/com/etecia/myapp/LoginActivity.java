@@ -1,6 +1,8 @@
 package br.com.etecia.myapp;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
+EditText edtEmail, edtSenha;
+Button btnEntrar, btnSair;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,10 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        edtEmail = findViewById(R.id.edtemail);
+        edtSenha = findViewById(R.id.edtsenha);
+        btnEntrar = findViewById(R.id.btnentrar);
+        btnSair = findViewById(R.id.btnsair);
+
     }
 }
